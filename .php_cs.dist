@@ -1,0 +1,13 @@
+<?php /** @noinspection PhpUnhandledExceptionInspection */
+
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
+
+$finder = Finder::create()
+    ->in('src/');
+
+return Config::create()
+    ->setCacheFile('.php_csf.cache')
+    ->setRiskyAllowed(true)
+    ->setRules(\Rochev\PhpCsFixer\Rules::get(true))
+    ->setFinder($finder);

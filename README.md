@@ -1,0 +1,1 @@
+# PhpCsFixer rules set

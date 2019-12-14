@@ -1,0 +1,30 @@
+{
+    "name": "rochev/pcf-rules",
+    "license": "MIT",
+    "type": "library",
+    "description": "php-cs-fixer rules set",
+    "keywords": [
+        "php",
+        "php-cs-fixer"
+    ],
+    "authors": [
+        {
+            "name": "Vladimir Rochev",
+            "email": "vladimir@rochev.me"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "friendsofphp/php-cs-fixer": "2.16.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rochev\\PhpCsFixer\\": "src/"
+        }
+    },
+    "require-dev": {
+    },
+    "scripts": {
+        "pcf-fix": "php-cs-fixer fix"
+    }
+}
